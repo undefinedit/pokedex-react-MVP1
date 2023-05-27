@@ -25,7 +25,7 @@ export const PokemonList = ({ pokemon }) => {
                     </div>
 
                     <div className="pokemon-image">
-                        <img className="image-fit" src={pokemon.sprites.front_default} />
+                        <img className="image-fit" src={pokemon.sprites.other.dream_world.front_default} />
                     </div>
 
                     <div className="pokemon-footer-card">

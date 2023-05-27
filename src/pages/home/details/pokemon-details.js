@@ -30,7 +30,7 @@ function Details() {
             <div className="sub-details">
 
                 <div className="header-logo-details">
-                    <img src="/assets/inicie-logo.png" />
+                    <img className="pokeballs-logo-details" src="/assets/pokeballs-logo.png" />
                 </div>
 
                 <div className="header-title">

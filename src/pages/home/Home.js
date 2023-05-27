@@ -72,7 +72,7 @@ function Home() {
     return (
         <div className="App">
             <div className="header-logo">
-                <img src={"/assets/inicie-logo.png"} />
+                <img className="pokeballs-logo" src={"/assets/pokeballs-logo.png"} />
             </div>
 
             <div className="pokemon-title-head">
