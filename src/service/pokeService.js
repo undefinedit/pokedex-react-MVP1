@@ -1,11 +1,12 @@
 import axios from 'axios';
 
-const BASE_URL = 'https://pokeapi.co/api/v2';
+const BASE_URL = 'https://backend-pokeapi.azurewebsites.net/';
 
 
 
 const fetchAllPokemon = async (limit, pageNumber) => {
     try {
+        debugger
         const offset = (pageNumber - 1) * limit;
         const response = await axios.get(`${BASE_URL}/pokemon?limit=${limit}&offset=${offset}`);
         const data = response.data;

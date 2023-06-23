@@ -26,9 +26,11 @@ function Home() {
     };
 
     const nextPage = () => {
-        setPokemonData([]);
-        setCurrentPage((prevPage) => prevPage + 1);
-        fetchData(limit, currentPage +1);
+        if (currentPage < 2) {
+            setPokemonData([]);
+            setCurrentPage((prevPage) => prevPage + 1);
+            fetchData(limit, currentPage + 1);
+        }
     }
 
     const previousPage = () => {
@@ -37,7 +39,7 @@ function Home() {
             setCurrentPage((prevPage) => prevPage - 1);
             fetchData(limit, currentPage - 1);
         }
-      }
+    }
 
     const searchPokemon = () => {
         const filteredPokemons = pokemonData.filter(

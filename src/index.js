@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Details from './pages/home/details/pokemon-details';
 import Home from './pages/home/Home';
+import Details from './pages/details/pokemon-details';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
